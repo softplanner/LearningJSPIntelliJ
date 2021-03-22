@@ -1,13 +1,24 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
+
+<%! int day = 3; %>
+
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>
+        if.....else example
+    </title>
 </head>
+
 <body>
-<h1><%= "Hello World!" %>
-</h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
+    <p>
+        Today's date: <%= (new java.util.Date()).toLocaleString() %>
+    </p>
+    <% if(day == 1 || day == 7){ %>
+        <p> today is weekend. </p>
+    <% } else { %>
+        <p> today is working day. </p>
+    <% } %>
 </body>
+
 </html>
