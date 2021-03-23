@@ -11,11 +11,9 @@
 </head>
 
 <body>
-    <p>
-        Today's date: <%= (new java.util.Date()).toLocaleString() %>
-    </p>
     <h1> Control Flow Statements</h1>
-    <h3> if.....else example </h3>
+
+    <h3> if ..... else example </h3>
     <% if(day == 1 || day == 7){ %>
         <p> today is weekend. </p>
     <% } else { %>
@@ -62,6 +60,9 @@
         </font><br />
         <% fontSize++; %>
     <% } %>
+
+    <jsp:forward page="beanexample.jsp" />
+
 </body>
 
 </html>
